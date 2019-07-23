@@ -1,0 +1,341 @@
+html {
+  color: white;
+  font-family: "Trebuchet MS", Trebuchet; sans-serif;
+  background-color: darkgrey;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------*/
+
+#navbar {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 1;
+}
+
+/* Style the navbar links */
+#navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/*-------------------------------------------------*/
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 150px;
+  font-family: 'hackedregular';
+}
+
+
+/*---------------------------------------------------*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/**/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*--------------------------------*/
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* LinkedIn */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+/*-------------------------------------*/
+
+.argueQuote {
+  height: 120%;
+}
+
+.quote {
+  background-color: black;
+}
+
+.contact {
+  background-color: #8c92AC;
+}
+
+.row, .break {
+  background-color: #6f7c80;
+}
+
+.head {
+  display: flex;
+  position: relative;
+  left: 400px;
+}
+
+.aboutme {
+  display: flex;
+  background-color: #373d3f;
+}
+
+.divider {
+  height: 100px;
+  width: 100%;
+  background-color: #373d3f;
+}
+
+.likes {
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  width: 200px;
+  background-color: grey;
+  position: relative;
+  left: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* position: relative;
+up: 200px;
+left: 200px; */
+
+.dislikes {
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  width: 200px;
+  background-color: grey;
+  position: relative;
+  top: 25px;
+  left: 125px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fun-facts {
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  width: 200px;
+  background-color: grey;
+  position: relative;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#cartoonMe {
+  display: flex;
+  border-radius: 50%;
+  position: relative;
+  top: 30px;
+  left: 80px;
+}
+
+.main-bio {
+  border-radius: 10px;
+  border-width: 10px;
+  border-color: black;
+  border-style: solid;
+  float: right;
+  position: relative;
+  left: 100px;
+  top: 50px;
+  width: 400px;
+  padding: 25px;
+  background-color: gray;
+}

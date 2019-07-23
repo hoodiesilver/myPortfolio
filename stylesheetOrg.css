@@ -1,0 +1,76 @@
+html {
+  font-family: "Lucida Console", Lucida, Monospace;
+  background-color: black;
+  color: white;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+  border-color: #669;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.nav {
+    padding: 10px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 5vh;
+}
+
+.bio {
+   display: flex;
+}
+
+.other {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.bio-text {
+    padding: 20px;
+    background-color: black
+}
+
+.rec-pro {
+    display: flex;
+    justify-content: center;
+}
+
+.fav-web {
+    display: block;
+    height: 480px;
+    text-align: center;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    line-height: 65px;
+}
+
+.pro-text {
+    display: block;
+    height: auto;
+    text-align: center;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+}
+
+.fav-web, div {
+  padding: 15px;
+}
+
+.pro-text, div {
+  padding: 15px;
+}
