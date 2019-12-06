@@ -386,6 +386,14 @@ p {
   padding-right: 75px;
 }
 
+.lillySinghImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Tried to center audio, but it's not working*/
 .audio-container {
   display: flex;
   justify-content: center;
