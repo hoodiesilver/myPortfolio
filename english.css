@@ -385,3 +385,7 @@ p {
   padding-left: 50px;
   padding-right: 75px;
 }
+
+audio {
+  align-content: center;
+}
